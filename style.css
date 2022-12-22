@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+:root {
+    --color-purple: #7550FE;
+    --color-grey: #F5F4F8;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-grey);
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* nav section */
+header {
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-section-left {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+.nav-section-right {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+}
+.nav-section-right .icon-container {
+    position: relative;
+    border-radius: 50%;
+    background-color: #F5F4F8;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.nav-section-right img {
+    width: 3vw;
+    border-radius: 50%;
+}
+.circle-purple {
+    position: absolute;
+    background-color: var(--color-purple);
+    border-radius: 50%;
+    width: 0.5em;
+    height: 0.5em;
+    top: 3px;
+    right: 10px;
+}
+.nav-section-right .image-container {
+    position: relative;
+}
+.circle-green {
+    position: absolute;
+    background-color: #1ACB98;
+    border-radius: 50%;
+    width: 0.5em;
+    height: 0.5em;
+    border: 2px solid white;
+    bottom: 10px;
+    right: 3px;
+}
+
+/* hero section*/
+
+.hero {
+    background-color: var(--color-purple);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin-inline: auto;
+    justify-content: center;
+    height: 50vh;
+}
+
+.hero-welcome, .hero-image {
+    max-width: 30vw;
+    color: white;
+
+}
+.hero-image {
+    height: 100%;
+}
+.hero-image img {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    height: 2.5em;
+    border-radius: 8px;
+}
+button p {
+    margin: 0;
+    padding: 2p;
+    padding: 9px;
+}
+
+.hero-welcome button:first-of-type {
+    background-color: #1ACB98;
+    color: white;
+    border: none;
+}
+
+.hero-welcome button:last-of-type {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+h1 {
+    color: var(--color-grey);
+}
+.hero-welcome h3 {
+    color: #ffffff73;
+}
+
+/* card section */
+
+main {
+    background-color: var(--color-grey);
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    height: 350px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+.cards .cards-logo {
+    position: absolute;
+    width: 100%;
+}
+
+.card-lower {
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 10px;
+    
+}
+/* .cards p {
+    position: absolute;
+    bottom: 7em;
+    font-size: 0.6em;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.cards .second-line {
+    bottom: 5em;
+}
+
+.cards .third-line {
+    bottom: 3em;
+}
+.cards .third-line span:last-of-type {
+    color: grey
+}
+.cards .fourth-line {
+    bottom: 1.5em;
+
+}
+.cards .fourth-line span {
+    color: grey;
+    text-decoration: line-through;
+}
+*/
+/* .cards hr {
+    position: absolute;
+    bottom: 0.8em;
+    width: 100%;
+    color: var(--color-grey);
+} */
+.cards .fifth-line {
+    bottom: 0;
+} 
+.cards .fifth-line img {
+    width: 20px;
+    border-radius: 50%;
+}
+/* .cards .fifth-line span {
+
+} */
+
+
+/* Footer */
+footer {
+    display: flex;
+   justify-content: space-around;
+}
+footer ol {
+    display: flex;
+    gap: 10px;
+}
